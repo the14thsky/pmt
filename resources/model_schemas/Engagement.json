@@ -1,0 +1,142 @@
+[
+    {
+        "name": "id",
+        "dbType": "increments",
+        "htmlType": "number",
+        "validations": "",
+        "searchable": false,
+        "fillable": false,
+        "primary": true,
+        "inForm": false,
+        "inIndex": false,
+        "inView": true
+    },
+    {
+        "name": "customer_id",
+        "dbType": "integer",
+        "htmlType": "text",
+        "validations": "required",
+        "searchable": true,
+        "fillable": true,
+        "primary": false,
+        "inForm": true,
+        "inIndex": true,
+        "inView": true
+    },
+    {
+        "name": "opportunity_id",
+        "dbType": "integer",
+        "htmlType": "text",
+        "validations": "required",
+        "searchable": true,
+        "fillable": true,
+        "primary": false,
+        "inForm": true,
+        "inIndex": true,
+        "inView": true
+    },
+    {
+        "name": "type",
+        "dbType": "string",
+        "htmlType": "select,select:phone,email,meeting,presentation,submit quote",
+        "validations": "required",
+        "searchable": true,
+        "fillable": true,
+        "primary": false,
+        "inForm": true,
+        "inIndex": true,
+        "inView": true
+    },
+    {
+        "name": "brief_description",
+        "dbType": "longText",
+        "htmlType": "textarea",
+        "validations": "",
+        "searchable": true,
+        "fillable": true,
+        "primary": false,
+        "inForm": true,
+        "inIndex": true,
+        "inView": true
+    },
+    {
+        "name": "attachment",
+        "dbType": "string",
+        "htmlType": "file",
+        "validations": "",
+        "searchable": true,
+        "fillable": true,
+        "primary": false,
+        "inForm": true,
+        "inIndex": false,
+        "inView": true
+    },
+    {
+        "name": "follow_up",
+        "dbType": "string",
+        "htmlType": "select,select:Yes,No",
+        "validations": "required",
+        "searchable": true,
+        "fillable": true,
+        "primary": false,
+        "inForm": true,
+        "inIndex": true,
+        "inView": true
+    },
+    {
+        "name": "action_item",
+        "dbType": "longText",
+        "htmlType": "text",
+        "validations": "",
+        "searchable": true,
+        "fillable": true,
+        "primary": false,
+        "inForm": true,
+        "inIndex": true,
+        "inView": true
+    },
+    {
+        "name": "dateline",
+        "dbType": "date",
+        "htmlType": "date",
+        "validations": "required",
+        "searchable": true,
+        "fillable": true,
+        "primary": false,
+        "inForm": true,
+        "inIndex": true,
+        "inView": true
+    },
+    {
+        "name": "created_at",
+        "dbType": "timestamp",
+        "htmlType": "date",
+        "validations": "",
+        "searchable": false,
+        "fillable": false,
+        "primary": false,
+        "inForm": false,
+        "inIndex": false,
+        "inView": true
+    },
+    {
+        "name": "updated_at",
+        "dbType": "timestamp",
+        "htmlType": "date",
+        "validations": "",
+        "searchable": false,
+        "fillable": false,
+        "primary": false,
+        "inForm": false,
+        "inIndex": false,
+        "inView": true
+    },
+    {
+        "type": "relation",
+        "relation": "mt1,Customer"
+    },
+    {
+        "type": "relation",
+        "relation": "mt1,Opportunity"
+    }
+]

@@ -1,0 +1,42 @@
+[
+    {
+        "name": "id",
+        "dbType": "increments",
+        "htmlType": "number",
+        "validations": "",
+        "searchable": false,
+        "fillable": false,
+        "primary": true,
+        "inForm": false,
+        "inIndex": false,
+        "inView": true
+    },
+    {
+        "name": "department_name",
+        "dbType": "string",
+        "htmlType": "text",
+        "validations": "required",
+        "searchable": true,
+        "fillable": true,
+        "primary": false,
+        "inForm": true,
+        "inIndex": false,
+        "inView": true
+    },
+    {
+        "name": "parent",
+        "dbType": "integer",
+        "htmlType": "select,selectTable:users:name,id",
+        "validations": "required",
+        "searchable": true,
+        "fillable": true,
+        "primary": false,
+        "inForm": true,
+        "inIndex": false,
+        "inView": true
+    },
+    {
+        "type": "relation",
+        "relation": "1t1,Department,parent,id"
+    }
+]
